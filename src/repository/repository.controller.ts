@@ -17,8 +17,8 @@ export class RepositoryController {
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    const repository = this.repositoryService.findOne(+id);
+  findOne(@Param('id') id: number) {
+    const repository = this.repositoryService.findOne(id);
     if (!repository) {
       throw new HttpException(
         `Not found the repository state with the id ${id}`,

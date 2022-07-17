@@ -35,7 +35,7 @@ describe('RepositoryService', () => {
       expect.arrayContaining([expect.objectContaining(result.repositories[0])]),
     );
   });
-  it('should return an repository state if the method send an id param', () => {
+  it('should return an repository state if the method send an id parameter', () => {
     expect(service.findOne(1)).toStrictEqual(
       result.repositories.find((val) => val.id == 1),
     );
