@@ -7,6 +7,9 @@ export class RepositoryService {
   }
 
   findOne(id: number) {
-    return repositoryDataMock.repositories.find((value) => value.id === id);
+    const repository = repositoryDataMock.repositories.find(
+      (value) => value.id === id,
+    );
+    return repository ? repository : {};
   }
 }

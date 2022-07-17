@@ -43,4 +43,8 @@ describe('RepositoryService', () => {
       result.repositories.find((val) => val.id == 2),
     );
   });
+
+  it('should return an empty response whether you send an id does not exist', () => {
+    expect(service.findOne(5)).toStrictEqual({});
+  });
 });
