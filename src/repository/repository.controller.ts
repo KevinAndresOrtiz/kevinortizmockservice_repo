@@ -1,4 +1,10 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  HttpException,
+  HttpStatus,
+  Param,
+} from '@nestjs/common';
 import { RepositoryService } from './repository.service';
 
 @Controller('repository')
@@ -12,6 +18,13 @@ export class RepositoryController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.repositoryService.findOne(+id);
+    const repository = this.repositoryService.findOne(+id);
+    if (!repository) {
+      throw new HttpException(
+        `Not found the repository state with the id ${id}`,
+        HttpStatus.NOT_FOUND,
+      );
+    }
+    return repository;
   }
 }
