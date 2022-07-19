@@ -40,10 +40,10 @@ describe('RepositoryController', () => {
     );
   });
   it('should return an repository state if the method send an id parameter', () => {
-    expect(controller.findOne(1)).toStrictEqual(
+    expect(controller.findOne('1')).toStrictEqual(
       result.repositories.find((val) => val.id == 1),
     );
-    expect(controller.findOne(2)).toStrictEqual(
+    expect(controller.findOne('2')).toStrictEqual(
       result.repositories.find((val) => val.id == 2),
     );
   });
