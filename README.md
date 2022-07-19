@@ -8,14 +8,14 @@
 <a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
 <a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
 
-## Description
+## Descripcion
 
 [Nest] El Proyecto fue elaborado usando Nest JS y Typeorm .
  ```bash
  Los ejercicios desarrollados en este repositorio fueron los siguientes.
   1.- Diseñar un servicio simulado tipo Get
 ```
-## Installation
+## Instalacion
   ### Pre Instalacion
   Se debe tener instalado  Nestjs en la maquina donde se ejecuta el proyecto, el comando para la instalacion es el siguiente
   ```bash
@@ -26,7 +26,7 @@ Una vez descargado el proyecto , ejecuta el siguiente comando
 $ npm install
 ```
 
-## Running the app
+## Ejecutando la app
 Consideraciones: El proyecto esta escuchando en el puerto 3000
 ```bash
   
